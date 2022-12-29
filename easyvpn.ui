@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>EasyVPN</class>
+ <widget class="QWidget" name="EasyVPN">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>700</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>EasyVPN</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="EasyVPN.qrc">
+    <normaloff>:/assets/app.png</normaloff>:/assets/app.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#EasyVPN {
+	background-image: url(:/assets/kataer20104_con08_bg05.jpg);
+}</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QLabel" name="label">
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap resource="EasyVPN.qrc">:/assets/logo_tt2.png</pixmap>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="EasyVPN.qrc"/>
+ </resources>
+ <connections/>
+</ui>

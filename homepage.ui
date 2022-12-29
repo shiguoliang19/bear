@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>HomePage</class>
+ <widget class="QWidget" name="HomePage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>622</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_2">
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QToolButton" name="logo_tool_button">
+       <property name="styleSheet">
+        <string notr="true">QToolButton {
+	border-radius: 1px solid transparent;
+	background-color: transparent;
+	padding: 0px;
+	margin: 0px;
+}</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="EasyVPN.qrc">
+         <normaloff>:/assets/app.png</normaloff>:/assets/app.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>40</width>
+         <height>40</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="title_label">
+       <property name="styleSheet">
+        <string notr="true">font: 20pt &quot;Lucida Sans Unicode&quot;;
+color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="text">
+        <string>Easy VPN</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QToolButton" name="settings_tool_button">
+       <property name="styleSheet">
+        <string notr="true">QToolButton {
+	border: 0px;
+	background-color: transparent;
+}
+
+QToolButton:hover {
+	background-color: rgba(0, 120, 215, 50);
+}
+
+</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="EasyVPN.qrc">
+         <normaloff>:/assets/info.png</normaloff>:/assets/info.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>40</width>
+         <height>40</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QWidget" name="widget_2" native="true">
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <property name="leftMargin">
+       <number>20</number>
+      </property>
+      <property name="rightMargin">
+       <number>20</number>
+      </property>
+      <property name="bottomMargin">
+       <number>20</number>
+      </property>
+      <item>
+       <spacer name="verticalSpacer_3">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>212</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QWidget" name="widget" native="true">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">.QWidget {
+	background-color: rgb(255, 255, 255);
+	border: 1px solid rgb(220, 220, 220);
+	border-radius: 8px;
+}
+</string>
+        </property>
+        <layout class="QGridLayout" name="gridLayout">
+         <property name="leftMargin">
+          <number>20</number>
+         </property>
+         <property name="topMargin">
+          <number>20</number>
+         </property>
+         <property name="rightMargin">
+          <number>20</number>
+         </property>
+         <property name="bottomMargin">
+          <number>20</number>
+         </property>
+         <item row="0" column="3">
+          <widget class="QLabel" name="duration_label">
+           <property name="styleSheet">
+            <string notr="true">	font: 9pt &quot;Microsoft YaHei&quot;;
+	color: rgb(127, 66, 184);</string>
+           </property>
+           <property name="text">
+            <string>连接时长</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QLabel" name="time_label">
+           <property name="styleSheet">
+            <string notr="true">	font: 9pt &quot;Microsoft YaHei&quot;;
+	color: rgb(127, 66, 184);</string>
+           </property>
+           <property name="text">
+            <string>连接时间</string>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="1">
+          <widget class="QLabel" name="day_traffic_label">
+           <property name="styleSheet">
+            <string notr="true">	font: 9pt &quot;Microsoft YaHei&quot;;
+	color: rgb(127, 66, 184);</string>
+           </property>
+           <property name="text">
+            <string>当日流量</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="0">
+          <widget class="QToolButton" name="time_tool_button">
+           <property name="styleSheet">
+            <string notr="true">QToolButton {
+	border-radius: 1px solid transparent;
+	background-color: transparent;
+	padding: 0px;
+	margin: 0px;
+}</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset resource="EasyVPN.qrc">
+             <normaloff>:/assets/duration.png</normaloff>:/assets/duration.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>40</width>
+             <height>40</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="3">
+          <widget class="QLabel" name="month_traffic_label">
+           <property name="styleSheet">
+            <string notr="true">	font: 9pt &quot;Microsoft YaHei&quot;;
+	color: rgb(127, 66, 184);</string>
+           </property>
+           <property name="text">
+            <string>当月流量</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="2">
+          <widget class="QToolButton" name="duration_tool_button">
+           <property name="styleSheet">
+            <string notr="true">QToolButton {
+	border-radius: 1px solid transparent;
+	background-color: transparent;
+	padding: 0px;
+	margin: 0px;
+}</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset resource="EasyVPN.qrc">
+             <normaloff>:/assets/time.png</normaloff>:/assets/time.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>40</width>
+             <height>40</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="2">
+          <widget class="QToolButton" name="month_traffic_tool_button">
+           <property name="styleSheet">
+            <string notr="true">QToolButton {
+	border-radius: 1px solid transparent;
+	background-color: transparent;
+	padding: 0px;
+	margin: 0px;
+}</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset resource="EasyVPN.qrc">
+             <normaloff>:/assets/speed.png</normaloff>:/assets/speed.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>40</width>
+             <height>40</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="0">
+          <widget class="QToolButton" name="day_traffic_tool_button">
+           <property name="styleSheet">
+            <string notr="true">QToolButton {
+	border-radius: 1px solid transparent;
+	background-color: transparent;
+	padding: 0px;
+	margin: 0px;
+}</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset resource="EasyVPN.qrc">
+             <normaloff>:/assets/speed.png</normaloff>:/assets/speed.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>40</width>
+             <height>40</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item row="6" column="0" colspan="2">
+          <widget class="QLabel" name="day_traffic_value_label">
+           <property name="styleSheet">
+            <string notr="true">color: rgb(75, 101, 168);</string>
+           </property>
+           <property name="text">
+            <string>0 KiB</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="0" colspan="2">
+          <widget class="QLabel" name="time_value_label">
+           <property name="styleSheet">
+            <string notr="true">color: rgb(75, 101, 168);</string>
+           </property>
+           <property name="text">
+            <string>2022/12/10 22:56:03</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="2" colspan="2">
+          <widget class="QLabel" name="duration_value_label">
+           <property name="styleSheet">
+            <string notr="true">color: rgb(75, 101, 168);</string>
+           </property>
+           <property name="text">
+            <string>00:00:05</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="6" column="2" colspan="2">
+          <widget class="QLabel" name="month_traffic_value_label">
+           <property name="styleSheet">
+            <string notr="true">color: rgb(75, 101, 168);</string>
+           </property>
+           <property name="text">
+            <string>0 KiB</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <spacer name="verticalSpacer">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeType">
+         <enum>QSizePolicy::Fixed</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>40</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="disconnect_push_button">
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+	height: 50px;
+	font: 75 12pt &quot;微软雅黑&quot;;
+	color: rgb(255, 255, 255);
+	border: 1px solid transparent;
+	border-radius: 8px;
+	background-color: rgb(203, 91, 91);
+}
+
+QPushButton:hover {
+	height: 50px;
+	font: 75 12pt &quot;微软雅黑&quot;;
+	color: rgb(255, 255, 255);
+	border: 1px solid transparent;
+	border-radius: 8px;
+	background-color: rgb(224, 113, 113);
+}
+
+
+</string>
+        </property>
+        <property name="text">
+         <string>断开</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="EasyVPN.qrc"/>
+ </resources>
+ <connections/>
+</ui>

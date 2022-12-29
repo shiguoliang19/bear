@@ -1,0 +1,77 @@
+
+MainWindow {
+    background-color:#3a3a3a;
+    border: solid 1px #e81123;
+    margin: 1px;
+}
+
+MainWindow QLabel#win-title-label {
+    color: #ffffff;
+    font-size: 12px;
+    height: 19px;
+    min-height: 19px;
+    max-height: 19px;
+}
+
+MainWindow QPushButton#full-button {
+    background-image: url(:/res/svg/fullscreen.svg);
+}
+
+MainWindow QPushButton#min-button {
+    background-image: url(:/res/svg/minimize.svg);
+}
+MainWindow QPushButton#max-button {
+    background-image: url(:/res/svg/maximize.svg);
+}
+
+MainWindow QPushButton#win-close-button {
+    background-image: url(:/res/svg/close.svg);
+}
+
+MainWindow QPushButton#icon-button:hover{
+    background-color:#3a3a3a;
+}
+
+MainWindow QPushButton#full-button:hover{
+    background-color:#686868;
+}
+
+MainWindow QPushButton#max-button:hover{
+    background-color:#686868;
+}
+
+MainWindow QPushButton#min-button:hover{
+    background-color:#686868;
+}
+
+MainWindow QPushButton#win-close-button:hover {
+    background-color:#e81123;
+}
+
+MainWindow QPushButton#icon-button, QPushButton#full-button, QPushButton#min-button, QPushButton#max-button, QPushButton#win-close-button {
+    height: 29px;
+    width: 45px;
+    min-height: 29px;
+    max-height: 29px;
+    border-radius: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+}
+
+MainWindow QPushButton#icon-button {
+    background-image: url(:/res/svg/icon.svg);
+    width: 29px;
+    min-width: 29px;
+    max-width: 29px;
+    height: 29px;
+    min-height: 29px;
+    max-height: 29px;
+    margin: 0 2px 0 5px;
+    padding: 0;
+}
+
+MainWindow QLabel#test-label {
+    background-color: #ffffff;
+}

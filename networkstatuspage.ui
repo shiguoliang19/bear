@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>NetworkStatusPage</class>
+ <widget class="QWidget" name="NetworkStatusPage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>650</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#NetworkStatusPage {
+	background-color: rgb(255, 255, 255);
+}</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QWidget" name="widget_3" native="true">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>50</height>
+      </size>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_6">
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>41</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QToolButton" name="return_button">
+        <property name="styleSheet">
+         <string notr="true">QToolButton {
+	border-radius: 1px solid transparent;
+	background-color: transparent;
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset resource="EasyVPN.qrc">
+          <normaloff>:/assets/return.png</normaloff>:/assets/return.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>35</width>
+          <height>35</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="title_label">
+        <property name="styleSheet">
+         <string notr="true">font: 12pt &quot;Microsoft YaHei&quot;;
+color: rgb(127, 66, 184);</string>
+        </property>
+        <property name="text">
+         <string>网络状态</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="latency_label">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>50</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+	font: 9pt &quot;Microsoft YaHei&quot;;
+	color: rgb(127, 66, 184);
+	background-color: rgb(220, 220, 220);
+	padding: 5 5px;
+	
+	border-width: 0 0 0 3px;
+	border-style: solid;
+	border-color: rgb(127, 66, 184);
+}</string>
+     </property>
+     <property name="text">
+      <string>时延</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="latency_value_label">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>50</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 25 9pt &quot;Microsoft YaHei&quot;;
+color: rgb(75, 101, 168);
+background-color: rgb(250, 250, 250);
+padding: 5 12px;</string>
+     </property>
+     <property name="text">
+      <string>20 ms</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="loss_rate_label">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>50</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+	font: 9pt &quot;Microsoft YaHei&quot;;
+	color: rgb(127, 66, 184);
+	background-color: rgb(220, 220, 220);
+	padding: 5 5px;
+	
+	border-width: 0 0 0 3px;
+	border-style: solid;
+	border-color: rgb(127, 66, 184);
+}</string>
+     </property>
+     <property name="text">
+      <string>丢包</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="loss_rate_value_label">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>50</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 25 9pt &quot;Microsoft YaHei&quot;;
+color: rgb(75, 101, 168);
+background-color: rgb(250, 250, 250);
+padding: 5 12px;</string>
+     </property>
+     <property name="text">
+      <string>0 %</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="bandwidth_label">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>50</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+	font: 9pt &quot;Microsoft YaHei&quot;;
+	color: rgb(127, 66, 184);
+	background-color: rgb(220, 220, 220);
+	padding: 5 5px;
+	
+	border-width: 0 0 0 3px;
+	border-style: solid;
+	border-color: rgb(127, 66, 184);
+}</string>
+     </property>
+     <property name="text">
+      <string>带宽</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QWidget" name="widget" native="true">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>50</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">.QWidget {
+	font: 25 9pt &quot;Microsoft YaHei&quot;;
+	color: rgb(75, 101, 168);
+	background-color: rgb(250, 250, 250);
+}
+
+QLabel {
+	font: 25 9pt &quot;Microsoft YaHei&quot;;
+	color: rgb(75, 101, 168);
+}</string>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <property name="leftMargin">
+       <number>12</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QLabel" name="bandwidth_value_label">
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="text">
+         <string>↓ 0 bps ↑ 0 bps</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="traffic_label">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>50</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+	font: 9pt &quot;Microsoft YaHei&quot;;
+	color: rgb(127, 66, 184);
+	background-color: rgb(220, 220, 220);
+	padding: 5 5px;
+	
+	border-width: 0 0 0 3px;
+	border-style: solid;
+	border-color: rgb(127, 66, 184);
+}</string>
+     </property>
+     <property name="text">
+      <string>流量</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QWidget" name="widget_2" native="true">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>50</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">.QWidget {
+	font: 25 9pt &quot;Microsoft YaHei&quot;;
+	color: rgb(75, 101, 168);
+	background-color: rgb(250, 250, 250);	
+}
+
+QLabel {
+	font: 25 9pt &quot;Microsoft YaHei&quot;;
+	color: rgb(75, 101, 168);
+}
+
+</string>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <property name="leftMargin">
+       <number>12</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QLabel" name="traffic_value_label">
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="text">
+         <string>↓ 0 B/s ↑ 0 B/s</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="tx_traffic_label">
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_2">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <spacer name="verticalSpacer">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>287</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="EasyVPN.qrc"/>
+ </resources>
+ <connections/>
+</ui>
